@@ -4,7 +4,7 @@ import java.io.Serializable;
 import java.util.Date;
 import java.util.Objects;
 
-public class Sellers implements Serializable{
+public class Seller implements Serializable{
 
 	private static final long serialVersionUID = 1L;
 	private Integer id;
@@ -15,10 +15,10 @@ public class Sellers implements Serializable{
 	
 	private Department department;
 	
-	public Sellers() {
+	public Seller() {
 	}
 
-	public Sellers(Integer id, String name, String email, Date birthDate, Double baseSalary, Department department) {
+	public Seller(Integer id, String name, String email, Date birthDate, Double baseSalary, Department department) {
 		this.id = id;
 		this.name = name;
 		this.email = email;
@@ -88,7 +88,7 @@ public class Sellers implements Serializable{
 			return false;
 		if (getClass() != obj.getClass())
 			return false;
-		Sellers other = (Sellers) obj;
+		Seller other = (Seller) obj;
 		return Objects.equals(id, other.id);
 	}
 
